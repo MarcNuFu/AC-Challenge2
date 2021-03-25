@@ -1,2 +1,5 @@
 # AC-Challenge2
-Second optimization challenge from Computer Architecture
+
+Segundo reto de optimización de la asignatura Arquitectura de computadores
+
+Speed-up = 101.93x
