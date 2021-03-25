@@ -1,0 +1,20 @@
+#!/bin/bash -l              
+#SBATCH --partition=aolin.q
+#SBATCH --exclusive
+
+# print information for documentation
+echo "Compile" $1 "for CPU execution with gcc -O3 version 9.2 in file" $2".O3"
+
+# install gcc compiler version 9.2
+module load gcc/9.2.0
+echo
+
+# compile for CPU with optimization level 3
+gcc -O3 $1 -o ${2}.O3
+
+# execute and measure total time and general performance counters
+perf stat ${2}.O3
+echo
+
+# execute and generate performance profiling file (perf.stat)
+perf record ${2}.O3
