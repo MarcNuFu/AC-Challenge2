@@ -1,0 +1,23 @@
+Compile CH2.c for CPU execution with gcc -O3 version 9.2 in file ./CH2.O3
+
+Challenge #2: Vector size is 10000. Repeat 50 times
+V1:32103997731029895251739766108980
+V2:00000000000000000000000000045087
+V3:63392771324953818089038280657097
+V4:21929010538222383501982109941722
+
+ Performance counter stats for './CH2.O3':
+
+         76.428,37 msec task-clock                #    0,997 CPUs utilized          
+             4.131      context-switches          #    0,054 K/sec                  
+                 4      cpu-migrations            #    0,000 K/sec                  
+               645      page-faults               #    0,008 K/sec                  
+   258.445.851.390      cycles                    #    3,382 GHz                    
+   284.791.637.448      instructions              #    1,10  insn per cycle         
+    40.255.881.584      branches                  #  526,714 M/sec                  
+     2.207.477.252      branch-misses             #    5,48% of all branches        
+
+      76,631801897 seconds time elapsed
+
+      76,405355000 seconds user
+       0,028936000 seconds sys
